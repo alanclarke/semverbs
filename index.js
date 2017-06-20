@@ -12,14 +12,14 @@ function parse (version) {
 function compare (versionA, versionB) {
   versionA = parse(versionA)
   versionB = parse(versionB)
-  if (versionA.major !== versionB.major) return versionA.major > versionB.major
-  if (versionA.minor !== versionB.minor) return versionA.minor > versionB.minor
-  if (versionA.patch !== versionB.patch) return versionA.patch > versionB.patch
-  return null
+  if (versionA.major !== versionB.major) return versionA.major > versionB.major ? 1 : -1
+  if (versionA.minor !== versionB.minor) return versionA.minor > versionB.minor ? 1 : -1
+  if (versionA.patch !== versionB.patch) return versionA.patch > versionB.patch ? 1 : -1
+  return 0
 }
 
 function gt (versionA, versionB) {
-  return Boolean(compare(versionA, versionB))
+  return compare(versionA, versionB) > 0
 }
 
 function lt (versionA, versionB) {
@@ -27,5 +27,5 @@ function lt (versionA, versionB) {
 }
 
 function eq (versionA, versionB) {
-  return compare(versionB, versionA) === null
+  return compare(versionB, versionA) === 0
 }
