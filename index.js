@@ -23,7 +23,7 @@ function gt (versionA, versionB) {
 }
 
 function lt (versionA, versionB) {
-  return gt(versionB, versionA)
+  return compare(versionA, versionB) < 0
 }
 
 function eq (versionA, versionB) {
