@@ -13,14 +13,14 @@ npm install semverbs
 ```
 
 ## usage
-`
+```js
  var sv = require('semverbs')
  sv.eq('3', '3.0.0') // true
  sv.gt('3.0.1', '3.0.0') // true
  sv.lt('3.0.1', '3.2.0') // true
  sv.parse('3.2.1') // { major: 3, minor: 2, patch: 1 }
  ['1.2.2', '1.2.1', '1.2.3'].sort(sv.compare) // ['1.2.1', '1.2.2', '1.2.3']
-`
+```
 
 ## run tests
 ` npm test `
