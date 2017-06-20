@@ -1,0 +1,30 @@
+{
+  "name": "semverbs",
+  "version": "1.0.0",
+  "description": "Micro utility lib for parsing and comparing semantic versions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alanclarke/semverbs.git"
+  },
+  "keywords": [
+    "semver"
+  ],
+  "author": "\"Alan Clarke <hi@alz.io> (alz.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alanclarke/semverbs/issues"
+  },
+  "homepage": "https://github.com/alanclarke/semverbs#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {}
+}
