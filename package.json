@@ -1,6 +1,6 @@
 {
   "name": "semverbs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Micro utility lib for parsing and comparing semantic versions",
   "main": "index.js",
   "directories": {
