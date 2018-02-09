@@ -1,4 +1,4 @@
-module.exports = { eq: eq, gt: gt, lt: lt, compare: compare, parse: parse }
+module.exports = { eq: eq, gt: gt, lt: lt, compare: compare, parse: parse, toString: toString }
 
 function parse (version) {
   version = version.replace(/[^\d.]/gi, '').split('.')
@@ -7,6 +7,10 @@ function parse (version) {
     minor: Number(version[1] || 0),
     patch: Number(version[2] || 0)
   }
+}
+
+function toString (version) {
+  return [ version.major, version.minor, version.patch ].join('.')
 }
 
 function compare (versionA, versionB) {

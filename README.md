@@ -1,7 +1,7 @@
 # semverbs
 Tiny utility lib for parsing and comparing semantic versions
 
-- 31 lines of code
+- 35 lines of code
 - no dependencies
 - 100% test coverage
 - suitable for browser and nodejs
