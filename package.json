@@ -16,7 +16,7 @@
   "keywords": [
     "semver"
   ],
-  "author": "\"Alan Clarke <hi@alz.io> (alz.io)",
+  "author": "Alan Clarke <code@alz.io> (alz.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alanclarke/semverbs/issues"
